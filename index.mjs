@@ -68,7 +68,7 @@ async function downloadFiles(urls) {
     console.error("Error downloading files:", error);
   }
 
-  writeJson(filteredData);
+  writeJson(networkRequests);
 
   await browser.close();
 })();
